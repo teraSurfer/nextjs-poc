@@ -1,4 +1,4 @@
-import { ApolloProvider, InMemoryCache } from "@apollo/react-hooks";
+import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 import Products from '../components/products';
 
