@@ -1,11 +1,10 @@
-import { ApolloProvider } from "@apollo/react-hooks";
-import ApolloClient, { gql } from "apollo-boost";
+import { ApolloProvider, InMemoryCache } from "@apollo/react-hooks";
+import ApolloClient from "apollo-boost";
 import Products from '../components/products';
-
 
 const ProductsHome = ({data}) => {
   const client = new ApolloClient({
-    uri: "/api/graphql"
+    uri: '/api/graphql'
   });
 
   return (
